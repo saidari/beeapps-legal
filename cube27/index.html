@@ -19,6 +19,9 @@
   .box{background:#fffdf6;border:1px solid #e6dccb;border-radius:12px;padding:1rem 1.15rem;margin:1.5rem 0}
   strong{color:#2f2b26}
   a{color:#a87a0a}
+  table{border-collapse:collapse;width:100%;margin:1rem 0;font-size:.95rem}
+  th,td{border:1px solid #e6dccb;padding:.5rem .6rem;text-align:left;vertical-align:top}
+  th{background:#fffdf6;font-weight:600}
   footer{margin-top:3rem;padding-top:1.25rem;border-top:1px solid #e6dccb;color:#7a6f63;font-size:.9rem}
   .en{margin-top:4rem;padding-top:2rem;border-top:2px solid #e6dccb}
 </style>
@@ -26,49 +29,141 @@
 <body>
 
 <h1>Cube 27 — Gizlilik Politikası</h1>
-<p class="sub">Son güncelleme: 26 Temmuz 2026</p>
+<p class="sub">Son güncelleme: 28 Ağustos 2026</p>
 
 <div class="box">
-  <p><strong>Kısa özet:</strong> Cube 27 hiçbir kişisel veri toplamaz, saklamaz veya
-  üçüncü taraflarla paylaşmaz. Oyun tamamen cihazınızda çalışır. Hesap açmanız gerekmez.</p>
+  <strong>Kısa özet:</strong> Cube 27 tek başına, çevrimdışı oynanabilir ve bu hâliyle
+  hiçbir veri toplamaz. Yalnızca <strong>liderlik tabloları açıkken</strong> skorların
+  ve seçtiğin görünen ad sunucumuza gönderilir. Hesap açman gerekmez, e-posta veya
+  telefon istemeyiz. Reklam yoktur, üçüncü taraf analitik veya izleme aracı yoktur,
+  verilerin kimseyle paylaşılmaz veya satılmaz. Liderliği kapatabilir ve
+  sunucudaki verilerini uygulama içinden tamamen sildirebilirsin.
 </div>
 
 <h2>Toplanan veriler</h2>
-<p><strong>Hiçbiri.</strong> Uygulama şunları toplamaz: ad, e-posta, telefon numarası,
-konum, kişiler, fotoğraflar, cihaz kimliği, reklam kimliği, kullanım analitiği veya
-çökme kaydı. Uygulama içinde reklam yoktur ve satın alma yoktur.</p>
+<p>
+  Aşağıdaki veriler <strong>yalnızca liderlik tabloları açıkken</strong> (varsayılan
+  olarak açıktır, Ayarlar'dan kapatılabilir) cihazından sunucumuza gönderilir:
+</p>
 
-<h2>Cihazınızda saklananlar</h2>
-<p>Oyun deneyiminizin sürmesi için aşağıdaki bilgiler <strong>yalnızca cihazınızın
-kendi depolama alanında</strong> tutulur. Bu veriler cihazdan dışarı çıkmaz, tarafımıza
-veya başka bir sunucuya gönderilmez:</p>
+<table>
+  <tr><th>Veri</th><th>Neden</th></tr>
+  <tr>
+    <td><strong>Görünen ad</strong> (isteğe bağlı)</td>
+    <td>Tabloda görünmen için. Sen yazarsın; gerçek adın olmak zorunda değildir.
+        Ad vermezsen tabloda "Adsız oyuncu" olarak görünürsün.</td>
+  </tr>
+  <tr>
+    <td><strong>Oyun verisi</strong>: skor, en büyük taş, hamle sayısı, süre,
+        oynadığın hamlelerin dizisi, bölüm yıldızların</td>
+    <td>Tabloları oluşturmak ve <strong>skorları doğrulamak</strong> için. Hamle
+        dizisi olmadan bir skorun gerçekten oynanıp oynanmadığını doğrulayamayız;
+        bu, tabloların hile ile dolmasını engelleyen tek yöntemdir.</td>
+  </tr>
+  <tr>
+    <td><strong>Anonim cihaz anahtarı</strong></td>
+    <td>Skorlarını sana bağlamak için sunucunun ürettiği rastgele bir dizedir.
+        Cihaz kimliğinden, reklam kimliğinden veya hesabından türetilmez ve onlara
+        bağlanamaz. Sunucuda yalnızca <strong>kriptografik özeti</strong> saklanır.</td>
+  </tr>
+  <tr>
+    <td><strong>Uygulama sürümü</strong></td>
+    <td>Farklı sürümlerin oyun kuralları değişebileceği için skorun doğru kurala
+        göre doğrulanması gerekir.</td>
+  </tr>
+  <tr>
+    <td><strong>IP adresi</strong> — <em>saklanmaz</em></td>
+    <td>Her internet isteğinde teknik olarak sunucuya ulaşır. Ham IP adresini
+        <strong>hiçbir zaman yazmayız</strong>; yalnızca gizli bir anahtarla
+        tuzlanmış geri döndürülemez bir özetini, kötüye kullanımı (aynı yerden
+        otomatik hesap üretimi) sınırlamak için tutarız.</td>
+  </tr>
+</table>
+
+<p>
+  Uygulamada <strong>reklam yoktur, uygulama içi satın alma yoktur</strong>; reklam
+  kimliği, konum, kişiler, fotoğraflar, e-posta, telefon numarası, çökme kaydı veya
+  kullanım analitiği <strong>toplanmaz</strong>. Verilerin üçüncü taraflarla
+  <strong>paylaşılmaz ve satılmaz</strong>.
+</p>
+
+<h2>Liderliği kapatmak</h2>
+<p>
+  <strong>Ayarlar → Liderlik</strong> anahtarını kapattığında hiçbir skor
+  gönderilmez ve uygulama sunucumuzla hiç konuşmaz. Oyunun tamamı — sonsuz mod,
+  macera modu, Günün Küpü — kapalıyken de eksiksiz çalışır.
+</p>
+
+<h2>Verilerini silmek</h2>
+<p>
+  <strong>Ayarlar → Verilerimi sil</strong> ile sunucudaki kaydın
+  <strong>tamamen ve geri alınamaz biçimde</strong> silinir: görünen adın, üç
+  tablodaki bütün skorların ve oyuncu kaydın. Silme işleminden sonra liderlik
+  kendiliğinden kapanır, yani bir sonraki oyunun seni geri kaydetmez.
+</p>
+<p>
+  Cihazının kendi depolamasındaki rekorun, istatistiklerin ve bölüm ilerlemen
+  <strong>sende kalır</strong>; onları uygulamayı kaldırarak ya da cihaz
+  ayarlarından uygulama verilerini temizleyerek silebilirsin.
+</p>
+<p>
+  Uygulamaya erişimin yoksa <a href="mailto:saidari2021@gmail.com">saidari2021@gmail.com</a>
+  adresinden de silme talebinde bulunabilirsin.
+</p>
+
+<h2>Cihazında saklananlar</h2>
+<p>
+  Bu bilgiler yalnızca cihazının kendi depolama alanında tutulur ve liderlik
+  kapalıyken cihazdan hiç çıkmaz:
+</p>
 <ul>
-  <li>En yüksek skorunuz ve toplam istatistikleriniz (oynanan el, hamle, süre, en büyük taş)</li>
-  <li>Ses ve titreşim tercihleriniz, arayüz diliniz</li>
-  <li>Yarıda kalan oyununuz (uygulamayı kapatıp döndüğünüzde kaldığınız yerden devam edebilmeniz için)</li>
-  <li>Günün Küpü modunda bugünü oynayıp oynamadığınız</li>
+  <li>En yüksek skorun ve toplam istatistiklerin (oynanan el, hamle, süre, en büyük taş)</li>
+  <li>Bölüm modundaki ilerlemen ve yıldızların</li>
+  <li>Ses ve titreşim tercihlerin, arayüz dilin, tema seçimin</li>
+  <li>Yarıda kalan oyunun (kaldığın yerden devam edebilmen için)</li>
+  <li>Günün Küpü'nde bugünü oynayıp oynamadığın ve serin</li>
 </ul>
-<p>Bu verilerin tamamı uygulamanın verilerine aittir. <strong>Uygulamayı kaldırdığınızda
-hepsi silinir.</strong> Ayrıca cihaz ayarlarından uygulama verilerini temizleyerek de
-her an sıfırlayabilirsiniz.</p>
 
-<h2>İnternet bağlantısı</h2>
-<p>Uygulama çevrimdışı çalışır; oynamak için internet gerekmez. Uygulama içeriğinin
-tamamı (görseller, yazı tipleri, oyun motoru) uygulamanın içinde gelir; dışarıdan içerik
-indirilmez. Yalnızca siz "Skoru paylaş" düğmesine bastığınızda, cihazınızın kendi paylaşım
-ekranı açılır ve seçtiğiniz uygulamaya yalnızca skor metni verilir — bu işlemi siz
-başlatırsınız ve nereye gönderileceğine siz karar verirsiniz.</p>
+<h2>Veriler nerede tutuluyor</h2>
+<p>
+  Sunucu tarafı Cloudflare Workers ve Cloudflare D1 üzerinde çalışır. Bağlantılar
+  <strong>HTTPS ile şifrelenir</strong>. Cloudflare bu işlemede bizim adımıza
+  hizmet sağlayıcıdır; verilerini kendi amaçları için kullanmaz.
+</p>
+
+<h2>Saklama süresi</h2>
+<p>
+  Skorlar ve oyuncu kaydın, sen silene kadar tabloların çalışması için saklanır.
+  Kötüye kullanım sayaçları (tuzlanmış IP özeti) <strong>bir aydan kısa</strong>
+  bir süre işe yarar ve düzenli olarak temizlenir.
+</p>
 
 <h2>Çocukların gizliliği</h2>
-<p>Uygulama her yaş için uygundur ve hiç kimseden — çocuklar dahil — veri toplamaz.</p>
+<p>
+  Uygulama her yaş için uygundur. Çocuklardan bilerek kişisel veri toplamayız;
+  toplanan tek "kişisel" alan, oyuncunun kendi yazdığı görünen addır ve isteğe
+  bağlıdır. Çocuğunuzun bir ad yazdığını fark ederseniz Ayarlar'dan silebilir
+  veya bize yazabilirsiniz.
+</p>
 
 <h2>Üçüncü taraf hizmetler</h2>
-<p>Uygulamada üçüncü taraf analitik, reklam veya izleme aracı <strong>bulunmamaktadır</strong>.</p>
+<p>
+  Uygulamada üçüncü taraf analitik, reklam veya izleme aracı bulunmamaktadır.
+</p>
+
+<h2>Haklarınız</h2>
+<p>
+  KVKK ve GDPR kapsamında verilerinize erişme, düzeltme ve silme haklarınız vardır.
+  Silme uygulama içinden tek dokunuşla yapılabilir; diğer talepler için
+  <a href="mailto:saidari2021@gmail.com">saidari2021@gmail.com</a>.
+</p>
 
 <h2>Değişiklikler</h2>
-<p>Bu politika değişirse bu sayfa güncellenir ve yukarıdaki tarih yenilenir. Gelecekte
-veri toplayan bir özellik eklenirse (örneğin isteğe bağlı bir skor tablosu), bu politika
-önceden güncellenir ve gerekli izinler uygulama içinde açıkça istenir.</p>
+<p>
+  Bu politika değişirse bu sayfa güncellenir ve yukarıdaki tarih yenilenir. Veri
+  toplama biçimini değiştiren bir özellik eklenirse politika <strong>aynı sürümde</strong>
+  güncellenir.
+</p>
 
 <h2>İletişim</h2>
 <p>Sorularınız için: <a href="mailto:saidari2021@gmail.com">saidari2021@gmail.com</a></p>
@@ -76,54 +171,146 @@ veri toplayan bir özellik eklenirse (örneğin isteğe bağlı bir skor tablosu
 <footer>Cube 27 · Bee Apps</footer>
 
 <div class="en" lang="en">
-  <h1>Cube 27 — Privacy Policy</h1>
-  <p class="sub">Last updated: 26 July 2026</p>
 
-  <div class="box">
-    <p><strong>In short:</strong> Cube 27 collects no personal data, stores none, and shares
-    none with third parties. The game runs entirely on your device. No account is required.</p>
-  </div>
+<h1>Cube 27 — Privacy Policy</h1>
+<p class="sub">Last updated: 28 August 2026</p>
 
-  <h2>Data we collect</h2>
-  <p><strong>None.</strong> The app does not collect your name, email, phone number, location,
-  contacts, photos, device identifiers, advertising ID, usage analytics or crash reports.
-  There are no ads and no purchases in the app.</p>
-
-  <h2>Stored on your device</h2>
-  <p>So your progress survives between sessions, the following is kept
-  <strong>only in your device's own app storage</strong>. It never leaves the device and is
-  never sent to us or to any server:</p>
-  <ul>
-    <li>Your best score and totals (games played, moves, time, largest tile)</li>
-    <li>Your sound and vibration preferences, and interface language</li>
-    <li>Your unfinished game, so you can resume where you left off</li>
-    <li>Whether you have played today's Daily Cube</li>
-  </ul>
-  <p>All of it belongs to the app's own data. <strong>Uninstalling the app deletes it all.</strong>
-  You can also clear the app's data from your device settings at any time.</p>
-
-  <h2>Internet access</h2>
-  <p>The app works offline; no connection is needed to play. All content (graphics, fonts,
-  game engine) ships inside the app; nothing is downloaded. Only when you tap "Share score"
-  does your device's own share sheet open, passing just the score text to the app you choose —
-  you start that action and you decide where it goes.</p>
-
-  <h2>Children's privacy</h2>
-  <p>The app is suitable for all ages and collects no data from anyone, including children.</p>
-
-  <h2>Third-party services</h2>
-  <p>The app contains <strong>no</strong> third-party analytics, advertising or tracking tools.</p>
-
-  <h2>Changes</h2>
-  <p>If this policy changes, this page and the date above will be updated. If a feature that
-  collects data is ever added (for example an optional leaderboard), this policy will be
-  updated beforehand and the app will ask for the necessary consent explicitly.</p>
-
-  <h2>Contact</h2>
-  <p>Questions: <a href="mailto:saidari2021@gmail.com">saidari2021@gmail.com</a></p>
-
-  <footer>Cube 27 · Bee Apps</footer>
+<div class="box">
+  <strong>In short:</strong> Cube 27 plays fully offline and collects nothing in that
+  state. Only when <strong>leaderboards are on</strong> do your scores and the display
+  name you choose get sent to our server. No account, email or phone number is required.
+  There are no ads, no third-party analytics or tracking, and your data is never shared
+  or sold. You can turn leaderboards off and delete your server-side data from inside
+  the app.
 </div>
 
+<h2>Data we collect</h2>
+<p>
+  The following is sent from your device to our server <strong>only while leaderboards
+  are on</strong> (on by default, switchable in Settings):
+</p>
+
+<table>
+  <tr><th>Data</th><th>Why</th></tr>
+  <tr>
+    <td><strong>Display name</strong> (optional)</td>
+    <td>So you appear on the board. You choose it; it need not be your real name.
+        Without one you appear as "Unnamed player".</td>
+  </tr>
+  <tr>
+    <td><strong>Gameplay data</strong>: score, largest tile, move count, duration,
+        the sequence of moves you played, adventure stars</td>
+    <td>To build the boards and to <strong>verify scores</strong>. Without the move
+        sequence we cannot tell whether a score was actually played; this is the only
+        thing keeping the boards free of cheated entries.</td>
+  </tr>
+  <tr>
+    <td><strong>Anonymous device key</strong></td>
+    <td>A random string generated by the server to attach your scores to you. It is
+        not derived from and cannot be linked to a device identifier, advertising ID
+        or any account. Only a <strong>cryptographic hash</strong> of it is stored.</td>
+  </tr>
+  <tr>
+    <td><strong>App version</strong></td>
+    <td>Game rules can differ between versions, so a score must be verified against
+        the rules it was played under.</td>
+  </tr>
+  <tr>
+    <td><strong>IP address</strong> — <em>not stored</em></td>
+    <td>Technically reaches the server with any internet request. We
+        <strong>never write the raw IP</strong>; we keep only an irreversible,
+        salted hash of it to limit abuse (automated account creation from one place).</td>
+  </tr>
+</table>
+
+<p>
+  The app has <strong>no ads and no in-app purchases</strong>, and does
+  <strong>not</strong> collect advertising ID, location, contacts, photos, email,
+  phone number, crash logs or usage analytics. Your data is never
+  <strong>shared or sold</strong>.
+</p>
+
+<h2>Turning leaderboards off</h2>
+<p>
+  With <strong>Settings → Leaderboards</strong> off, no score is sent and the app does
+  not talk to our server at all. The whole game — endless, adventure and Daily Cube —
+  works exactly the same.
+</p>
+
+<h2>Deleting your data</h2>
+<p>
+  <strong>Settings → Delete my data</strong> removes your server record
+  <strong>completely and irreversibly</strong>: your display name, all your scores on
+  all three boards, and your player record. Leaderboards then turn off automatically,
+  so your next game does not re-register you.
+</p>
+<p>
+  Your local best score, statistics and adventure progress <strong>stay on your
+  device</strong>; remove them by uninstalling the app or clearing its data in your
+  device settings.
+</p>
+<p>
+  If you no longer have access to the app, you can also request deletion at
+  <a href="mailto:saidari2021@gmail.com">saidari2021@gmail.com</a>.
+</p>
+
+<h2>Stored on your device</h2>
+<p>
+  This is kept only in the app's own storage and never leaves the device while
+  leaderboards are off:
+</p>
+<ul>
+  <li>Your best score and lifetime statistics (games, moves, time, largest tile)</li>
+  <li>Your adventure progress and stars</li>
+  <li>Sound and vibration preferences, interface language, theme</li>
+  <li>Your unfinished game (so you can resume)</li>
+  <li>Whether you played today's Daily Cube, and your streak</li>
+</ul>
+
+<h2>Where data is held</h2>
+<p>
+  The server runs on Cloudflare Workers and Cloudflare D1. Connections are
+  <strong>encrypted with HTTPS</strong>. Cloudflare acts as our service provider for
+  this processing and does not use your data for its own purposes.
+</p>
+
+<h2>Retention</h2>
+<p>
+  Scores and your player record are kept so the boards work, until you delete them.
+  Abuse counters (the salted IP hash) are useful for <strong>less than a month</strong>
+  and are cleared regularly.
+</p>
+
+<h2>Children's privacy</h2>
+<p>
+  The app is suitable for all ages. We do not knowingly collect personal data from
+  children; the only "personal" field collected is the display name the player types,
+  and it is optional. If you notice that your child has entered a name, you can delete
+  it from Settings or write to us.
+</p>
+
+<h2>Third-party services</h2>
+<p>The app contains no third-party analytics, advertising or tracking tools.</p>
+
+<h2>Your rights</h2>
+<p>
+  Under GDPR and Turkey's KVKK you have the right to access, correct and delete your
+  data. Deletion is one tap inside the app; for anything else write to
+  <a href="mailto:saidari2021@gmail.com">saidari2021@gmail.com</a>.
+</p>
+
+<h2>Changes</h2>
+<p>
+  If this policy changes, this page is updated and the date above is refreshed. If a
+  feature changes what we collect, the policy is updated <strong>in the same
+  release</strong>.
+</p>
+
+<h2>Contact</h2>
+<p>Questions: <a href="mailto:saidari2021@gmail.com">saidari2021@gmail.com</a></p>
+
+<footer>Cube 27 · Bee Apps</footer>
+
+</div>
 </body>
 </html>
