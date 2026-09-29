@@ -29,13 +29,13 @@
 <body>
 
 <h1>Cube 27 — Gizlilik Politikası</h1>
-<p class="sub">Son güncelleme: 23 Eylül 2026</p>
+<p class="sub">Son güncelleme: 29 Eylül 2026</p>
 
 <div class="box">
   <strong>Kısa özet:</strong> Cube 27 tek başına, çevrimdışı oynanabilir ve bu hâliyle
   hiçbir veri toplamaz. Yalnızca <strong>liderlik tabloları açıkken</strong> skorların
   ve seçtiğin görünen ad sunucumuza gönderilir. Hesap açman gerekmez, e-posta veya
-    telefon istemeyiz. İstersen kaydını Google Play Games hesabına
+    telefon istemeyiz. İstersen kaydını Google Play Games (Android) ya da Game Center (iOS) hesabına
     <strong>bağlayabilirsin</strong>; bu tamamen isteğe bağlıdır ve yalnızca
   uygulamayı silip yeniden kurduğunda ilerlemeni geri getirmeye yarar. Üçüncü taraf analitik aracı yoktur. Liderlik açıkken, oyunu ve performansını iyileştirmek için <strong>kendi sunucumuza</strong> kullanım ve performans verisi gönderilir (örneğin oturum süresi, oyunun hangi ekranda kapatıldığı, cihazın kare hızı); bu veri reklam için kullanılmaz, kimseyle paylaşılmaz ve satılmaz. Reklamları göstermek için Google AdMob kullanılır; bu, reklam amaçlı bir cihaz kimliğinin Google ile paylaşılmasını içerebilir (bkz. "Reklam" bölümü). Verileriniz satılmaz. Liderliği kapatabilir ve
   sunucudaki verilerini uygulama içinden tamamen sildirebilirsin.
@@ -66,7 +66,7 @@
     <td>Skorlarını sana bağlamak için sunucunun ürettiği rastgele bir dizedir.
         Cihaz kimliğinden veya reklam kimliğinden türetilmez ve onlara
               bağlanamaz. Sunucuda yalnızca <strong>kriptografik özeti</strong> saklanır.
-        Google Play Games ile bağlanmayı <em>kendin seçersen</em> kaydın o hesapla
+        Google Play Games ya da Game Center ile bağlanmayı <em>kendin seçersen</em> kaydın o hesapla
         ilişkilendirilir; bunun dışında hiçbir hesaba bağlanmaz.</td>
   </tr>
     <tr>
@@ -77,8 +77,25 @@
             görünen adını verir. Tek amacı vardır: uygulamayı silip yeniden
             kurduğunda ya da telefonunu değiştirdiğinde rekorunu, rozetlerini ve
             avatarını geri getirmek. <strong>E-posta adresin, profil fotoğrafın ve
-            arkadaş listen bize gelmez.</strong> Bağlamazsan bu satırdaki hiçbir veri
-            toplanmaz ve oyun eskisi gibi çalışır.</td>
+            arkadaş listen bize gelmez.</strong> Yeni bir kurulumda, bağlı bir kaydın
+            olup olmadığını anlamak için kimliğin bir kez doğrulanır; eşleşen kayıt
+            yoksa <strong>saklanmaz</strong>. Bağlamazsan bu satırdaki hiçbir veri
+            saklanmaz ve oyun eskisi gibi çalışır.</td>
+    </tr>
+    <tr>
+      <td><strong>Game Center oyuncu kimliği</strong> (iOS) —
+        <em>yalnızca sen bağlarsan</em></td>
+    <td>iOS'ta Ayarlar'daki "Game Center" satırında <strong>Bağla</strong>'ya
+            dokunursan, Apple'ın imzaladığı Game Center oyuncu kimliğin sunucumuza
+            gönderilir; imzayı Apple'ın açık anahtarıyla doğrular ve kimliği
+            kaydınla eşleştiririz. Tek amacı vardır: uygulamayı silip yeniden
+            kurduğunda ya da cihaz değiştirdiğinde rekorunu, rozetlerini ve
+            avatarını geri getirmek. Yeni bir kurulumda, bağlı bir kaydın olup
+            olmadığını anlamak için kimliğin bir kez doğrulanır; eşleşen kayıt
+            yoksa <strong>saklanmaz</strong>. <strong>E-posta adresin, Apple
+            hesabın, Game Center takma adın ve arkadaş listen bize gelmez.</strong>
+            Bağlamazsan bu satırdaki hiçbir veri saklanmaz ve oyun eskisi gibi
+            çalışır.</td>
     </tr>
   <tr>
     <td><strong>Uygulama sürümü</strong></td>
@@ -132,7 +149,7 @@
 <p>
   <strong>Ayarlar → Verilerimi sil</strong> ile sunucudaki kaydın
   <strong>tamamen ve geri alınamaz biçimde</strong> silinir: görünen adın, üç
-  tablodaki bütün skorların, kullanım ve performans verin, altın ve kostüm kaydın, oyuncu kaydın ve varsa Play Games hesap bağlantın. Silme işleminden sonra liderlik
+  tablodaki bütün skorların, kullanım ve performans verin, altın ve kostüm kaydın, oyuncu kaydın ve varsa Play Games ya da Game Center hesap bağlantın. Silme işleminden sonra liderlik
   kendiliğinden kapanır, yani bir sonraki oyunun seni geri kaydetmez.
 </p>
 <p>
@@ -192,11 +209,16 @@
   <strong>Google AdMob</strong> kullanılmaktadır (ayrıntılar için "Reklam" bölümüne bakınız).
 </p>
 <p>
-  Tek üçüncü taraf entegrasyonu <strong>Google Play Games Services</strong>'tir
-  ve <strong>yalnızca sen "Bağla" dersen</strong> devreye girer. Bağladığında
-  oyun verilerin Google'a gönderilmez; bağlantı tek yönlüdür ve yalnızca
-  kimliğini doğrulamaya yarar. Google'ın bu alışverişteki veri uygulamaları
+  Hesap bağlama için Android'de <strong>Google Play Games Services</strong>,
+  iOS'ta Apple'ın <strong>Game Center</strong> hizmeti kullanılır. Kaydın bu
+  hesaplarla <strong>yalnızca sen "Bağla" dersen</strong> ilişkilendirilir.
+  Bağladığında oyun verilerin Google'a ya da Apple'a gönderilmez; bağlantı tek
+  yönlüdür ve yalnızca kimliğini doğrulamaya yarar. Cihazında Game Center'a
+  zaten girmişsen, uygulama açılırken Apple oturumunu kendiliğinden doğrular ve
+  bir "hoş geldin" bildirimi gösterebilir; bu, cihazınla Apple arasındadır.
+  Bu alışverişlerdeki veri uygulamaları
   <a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a>'na
+  ve <a href="https://www.apple.com/legal/privacy/">Apple Gizlilik Politikası</a>'na
   tabidir.
 </p>
 <h2>Reklam</h2>
@@ -241,14 +263,14 @@
 <div class="en" lang="en">
 
 <h1>Cube 27 — Privacy Policy</h1>
-<p class="sub">Last updated: 23 September 2026</p>
+<p class="sub">Last updated: 29 September 2026</p>
 
 <div class="box">
   <strong>In short:</strong> Cube 27 plays fully offline and collects nothing in that
   state. Only when <strong>leaderboards are on</strong> do your scores and the display
   name you choose get sent to our server. No account, email or phone number is required.
   You may optionally <strong>link</strong> your progress to your Google Play Games
-  account so it survives a reinstall; that is entirely your choice.
+  (Android) or Game Center (iOS) account so it survives a reinstall; that is entirely your choice.
   There are no third-party analytics tools. While leaderboards are on, usage and performance data (for example session length, which screen the game was closed on, and the device's frame rate) is sent <strong>to our own server</strong> to improve the game; it is not used for advertising, not shared with anyone and never sold. The app uses Google AdMob to show ads; this may involve sharing a device identifier with Google for advertising purposes (see the "Advertising" section). Your data is never sold. You can turn leaderboards off and delete your server-side data from inside
   the app.
 </div>
@@ -278,7 +300,7 @@
     <td>A random string generated by the server to attach your scores to you. It is
         not derived from and cannot be linked to a device identifier or advertising
         ID. Only a <strong>cryptographic hash</strong> of it is stored. If
-        <em>you choose</em> to link Google Play Games, your record is associated with
+        <em>you choose</em> to link Google Play Games or Game Center, your record is associated with
         that account; otherwise it is linked to no account at all.</td>
   </tr>
   <tr>
@@ -288,8 +310,24 @@
         <strong>only</strong> your Play Games player ID and your Play Games display
         name. It serves one purpose: restoring your best score, badges and avatar
         when you reinstall the app or switch phones. <strong>Your email address,
-        profile photo and friends list never reach us.</strong> If you don't link,
-        none of this is collected and the game works exactly as before.</td>
+        profile photo and friends list never reach us.</strong> On a new install,
+        your ID is checked once to see whether a linked record exists; if none
+        matches, it is <strong>not stored</strong>. If you don't link, none of this
+        is stored and the game works exactly as before.</td>
+  </tr>
+  <tr>
+    <td><strong>Game Center player ID</strong> (iOS) —
+        <em>only if you link</em></td>
+    <td>If you tap <strong>Link</strong> on the "Game Center" row in Settings on
+        iOS, your Game Center player ID, signed by Apple, is sent to our server; we
+        verify the signature with Apple's public key and match the ID to your
+        record. It serves one purpose: restoring your best score, badges and
+        avatar when you reinstall the app or switch devices. On a new install,
+        your ID is checked once to see whether a linked record exists; if none
+        matches, it is <strong>not stored</strong>. <strong>Your email address,
+        Apple Account, Game Center nickname and friends list never reach
+        us.</strong> If you don't link, none of this is stored and the game works
+        exactly as before.</td>
   </tr>
   <tr>
     <td><strong>App version</strong></td>
@@ -342,7 +380,8 @@
   <strong>Settings → Delete my data</strong> removes your server record
   <strong>completely and irreversibly</strong>: your display name, all your scores on
   all three boards, your usage and performance data, your gold and costume record,
-  and your player record. Leaderboards then turn off automatically,
+  your player record and, if you linked one, your Play Games or Game Center
+  account link. Leaderboards then turn off automatically,
   so your next game does not re-register you.
 </p>
 <p>
@@ -401,11 +440,16 @@
   at the bottom of the screen (see the "Advertising" section for details).
 </p>
 <p>
-  The only third-party integration is <strong>Google Play Games Services</strong>,
-  and it activates <strong>only if you choose to link</strong>. Linking does not
-  send your game data to Google; the connection is one-way and serves only to
-  verify your identity. Google's handling of that exchange is governed by the
-  <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.
+  Account linking uses <strong>Google Play Games Services</strong> on Android and
+  Apple's <strong>Game Center</strong> on iOS. Your record is associated with
+  these accounts <strong>only if you choose to link</strong>. Linking does not
+  send your game data to Google or Apple; the connection is one-way and serves
+  only to verify your identity. If you are already signed in to Game Center on
+  your device, Apple may verify your session automatically when the app opens
+  and show a "welcome back" notice; that happens between your device and Apple.
+  These exchanges are governed by the
+  <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and the
+  <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>.
 </p>
 <h2>Advertising</h2>
 <p>
