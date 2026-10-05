@@ -29,7 +29,7 @@
 <body>
 
 <h1>Cube 27 — Gizlilik Politikası</h1>
-<p class="sub">Son güncelleme: 29 Eylül 2026</p>
+<p class="sub">Son güncelleme: 5 Ekim 2026</p>
 
 <div class="box">
   <strong>Kısa özet:</strong> Cube 27 tek başına, çevrimdışı oynanabilir ve bu hâliyle
@@ -37,7 +37,7 @@
   ve seçtiğin görünen ad sunucumuza gönderilir. Hesap açman gerekmez, e-posta veya
     telefon istemeyiz. İstersen kaydını Google Play Games (Android) ya da Game Center (iOS) hesabına
     <strong>bağlayabilirsin</strong>; bu tamamen isteğe bağlıdır ve yalnızca
-  uygulamayı silip yeniden kurduğunda ilerlemeni geri getirmeye yarar. Üçüncü taraf analitik aracı yoktur. Liderlik açıkken, oyunu ve performansını iyileştirmek için <strong>kendi sunucumuza</strong> kullanım ve performans verisi gönderilir (örneğin oturum süresi, oyunun hangi ekranda kapatıldığı, cihazın kare hızı); bu veri reklam için kullanılmaz, kimseyle paylaşılmaz ve satılmaz. Reklamları göstermek için Google AdMob kullanılır; bu, reklam amaçlı bir cihaz kimliğinin Google ile paylaşılmasını içerebilir (bkz. "Reklam" bölümü). Verileriniz satılmaz. Liderliği kapatabilir ve
+  uygulamayı silip yeniden kurduğunda ilerlemeni geri getirmeye yarar. Üçüncü taraf analitik aracı yoktur. Liderlik açıkken, oyunu ve performansını iyileştirmek için <strong>kendi sunucumuza</strong> kullanım ve performans verisi gönderilir (örneğin oturum süresi, oyunun hangi ekranda kapatıldığı, cihazın kare hızı); bu veri reklam için kullanılmaz, kimseyle paylaşılmaz ve satılmaz. Reklamları göstermek için Google AdMob kullanılır; AdMob reklam kimliği, IP adresi ve uygulama içi etkileşimler gibi verileri toplayıp Google ile paylaşabilir (bkz. "Reklam" bölümü). Verileriniz satılmaz. Liderliği kapatabilir ve
   sunucudaki verilerini uygulama içinden tamamen sildirebilirsin.
 </div>
 
@@ -107,9 +107,14 @@
         başlatılan ve biten eller, oyunun hangi ekranda kapatıldığı, uygulama içi
         olaylar (örneğin eğitimi açma, tabloya bakma), cihazın kare süresi özeti,
         genel cihaz sınıfı (ekran boyutu, işlemci çekirdeği, bellek sınıfı),
-        saat dilimi, dil, platform ve reklam izni durumu</td>
+        saat dilimi, dil, platform, reklam izni durumu ve gösterilen banner reklam sayısı;
+        Android'de ayrıca uygulamayı <strong>nereden yüklediğin</strong> (Google Play'in yükleme
+        yönlendirmesi: örneğin bir reklam kampanyası ya da mağaza araması — reklam tıklama
+        kimlikleri <strong>cihazında silinir</strong>, sunucuya gelmez) ve <strong>ülken</strong>
+        (IP adresinden çıkarılan iki harfli ülke kodu, örneğin TR; IP adresi saklanmaz)</td>
     <td>Oyunu ve akıcılığını iyileştirmek, oyuncuların nerede zorlandığını ve
-        oyunu nerede bıraktığını anlamak için. Yukarıdaki anonim cihaz anahtarına
+        oyunu nerede bıraktığını anlamak için; yükleme kaynağı ve ülke, tanıtım çalışmalarının
+        hangi oyuncuları getirdiğini ölçmek için. Yukarıdaki anonim cihaz anahtarına
         bağlıdır; reklam kimliği ya da cihaz kimliği <strong>içermez</strong>,
         reklam için kullanılmaz ve üçüncü taraflarla paylaşılmaz.</td>
   </tr>
@@ -130,11 +135,11 @@
 </table>
 
 <p>
-  Uygulamada <strong>uygulama içi satın alma yoktur</strong>; konum, kişiler,
+  Uygulamada <strong>uygulama içi satın alma yoktur</strong>; kesin konum (GPS), kişiler,
   fotoğraflar, e-posta, telefon numarası veya çökme kaydı
-  <strong>toplanmaz</strong>. Uygulamada gösterilen tek bir banner reklam nedeniyle,
-  Google AdMob reklam amaçlı bir cihaz/reklam kimliğini toplayabilir ve Google ile
-  paylaşabilir (bkz. "Reklam" bölümü); bunun dışında verileriniz üçüncü taraflarla
+  <strong>toplanmaz</strong> (yalnızca yukarıdaki ülke kodu kaydedilir). Uygulamada gösterilen tek bir banner reklam nedeniyle,
+  Google AdMob "Reklam" bölümünde sayılan verileri toplayabilir ve Google ile
+  paylaşabilir; bunun dışında verileriniz üçüncü taraflarla
   <strong>paylaşılmaz ve satılmaz</strong>.
 </p>
 
@@ -225,9 +230,16 @@
 <p>
   Cube 27, ekranın alt kısmında <strong>tek bir banner reklam</strong> göstermek için
   <strong>Google AdMob</strong> hizmetini kullanır. Bu reklamın gösterilebilmesi için
-  AdMob, reklam amaçlı olarak cihazına ait bir reklam/cihaz kimliğini toplayabilir ve
-  Google ile paylaşabilir. Bu veriler liderlik tablosu veya hesap verilerinle
-  ilişkilendirilmez.
+  AdMob'un uygulamadaki yazılımı (Google Mobile Ads SDK) cihazından şu verileri kendiliğinden
+  toplayabilir ve Google ile paylaşabilir: <strong>IP adresi</strong> (cihazın yaklaşık
+  konumunu tahmin etmek için kullanılabilir), <strong>uygulama içi etkileşimler</strong>
+  (uygulamanın açılması, dokunmalar, reklam görüntülemeleri), <strong>tanılama
+  bilgileri</strong> (uygulamanın ve SDK'nın performansı; örneğin açılış süresi) ve
+  <strong>reklam/cihaz kimlikleri</strong> (Android'de reklam kimliği ve uygulama seti
+  kimliği; iOS'ta reklam kimliği yalnızca izin verirsen). Google bu verileri reklam
+  göstermek ve ölçmek, analiz ve sahtekârlığı önlemek için kullanır. Android reklam
+  kimliğini telefonunun ayarlarından sıfırlayabilir ya da silebilirsin. Bu veriler
+  liderlik tablosu veya hesap verilerinle ilişkilendirilmez.
 </p>
 <p>
   Uygulamayı ilk açtığında; Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'deki
@@ -263,7 +275,7 @@
 <div class="en" lang="en">
 
 <h1>Cube 27 — Privacy Policy</h1>
-<p class="sub">Last updated: 29 September 2026</p>
+<p class="sub">Last updated: 5 October 2026</p>
 
 <div class="box">
   <strong>In short:</strong> Cube 27 plays fully offline and collects nothing in that
@@ -271,7 +283,7 @@
   name you choose get sent to our server. No account, email or phone number is required.
   You may optionally <strong>link</strong> your progress to your Google Play Games
   (Android) or Game Center (iOS) account so it survives a reinstall; that is entirely your choice.
-  There are no third-party analytics tools. While leaderboards are on, usage and performance data (for example session length, which screen the game was closed on, and the device's frame rate) is sent <strong>to our own server</strong> to improve the game; it is not used for advertising, not shared with anyone and never sold. The app uses Google AdMob to show ads; this may involve sharing a device identifier with Google for advertising purposes (see the "Advertising" section). Your data is never sold. You can turn leaderboards off and delete your server-side data from inside
+  There are no third-party analytics tools. While leaderboards are on, usage and performance data (for example session length, which screen the game was closed on, and the device's frame rate) is sent <strong>to our own server</strong> to improve the game; it is not used for advertising, not shared with anyone and never sold. The app uses Google AdMob to show ads; AdMob may collect data such as the advertising ID, IP address and in-app interactions and share it with Google (see the "Advertising" section). Your data is never sold. You can turn leaderboards off and delete your server-side data from inside
   the app.
 </div>
 
@@ -345,9 +357,15 @@
         runs started and finished, which screen the game was closed on, in-app
         events (for example opening the tutorial or the leaderboard), a summary of the
         device's frame times, a general device class (screen size, CPU cores, memory
-        class), time zone, language, platform and ad-consent status</td>
+        class), time zone, language, platform, ad-consent status and the number of banner ads
+        shown; on Android also <strong>where you installed the app from</strong> (Google Play's
+        install referrer, for example an ad campaign or a store search — ad click identifiers are
+        <strong>removed on your device</strong> and never reach us) and your <strong>country</strong>
+        (a two-letter country code derived from your IP address, for example TR; the IP address is
+        not stored)</td>
     <td>To improve the game and how smoothly it runs, and to understand where players
-        struggle or stop. It is tied to the anonymous device key above; it contains
+        struggle or stop; the install source and country measure which players our promotion
+        brings. It is tied to the anonymous device key above; it contains
         <strong>no</strong> advertising ID or device ID, is not used for advertising and
         is not shared with third parties.</td>
   </tr>
@@ -361,10 +379,10 @@
 
 <p>
   The app has <strong>no in-app purchases</strong>, and does
-  <strong>not</strong> collect location, contacts, photos, email,
-  phone number or crash logs. Because the app shows a single
-  banner ad, Google AdMob may collect and share an advertising/device identifier
-  for advertising purposes (see the "Advertising" section); other than that, your
+  <strong>not</strong> collect precise location (GPS), contacts, photos, email,
+  phone number or crash logs (only the country code above is stored). Because the app shows a single
+  banner ad, Google AdMob may collect the data listed in the "Advertising" section
+  and share it with Google; other than that, your
   data is never <strong>shared with third parties or sold</strong>.
 </p>
 
@@ -454,8 +472,15 @@
 <h2>Advertising</h2>
 <p>
   Cube 27 uses <strong>Google AdMob</strong> to show a single banner ad at the
-  bottom of the screen. To serve this ad, AdMob may collect an advertising/device
-  identifier from your device and share it with Google for advertising purposes.
+  bottom of the screen. To serve this ad, AdMob's code in the app (the Google Mobile
+  Ads SDK) may automatically collect the following from your device and share it with
+  Google: your <strong>IP address</strong> (which may be used to estimate the device's
+  approximate location), <strong>in-app interactions</strong> (app launches, taps, ad
+  views), <strong>diagnostic information</strong> (how the app and the SDK perform, for
+  example launch time) and <strong>advertising/device identifiers</strong> (on Android
+  the advertising ID and app set ID; on iOS the advertising ID only if you allow it).
+  Google uses this data to show and measure ads, for analytics and to prevent fraud.
+  You can reset or delete the Android advertising ID in your phone's settings.
   This data is not linked to your leaderboard or account data.
 </p>
 <p>
